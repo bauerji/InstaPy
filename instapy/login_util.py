@@ -282,6 +282,9 @@ def login_user(
         dismiss_save_information(browser, logger)
         accept_igcookie_dialogue(browser, logger)
         return True
+    
+    # accept the second cookie dialogue
+    accept_igcookie_dialogue(browser, logger)
 
     # if user is still not logged in, then there is an issue with the cookie
     # so go create a new cookie.
